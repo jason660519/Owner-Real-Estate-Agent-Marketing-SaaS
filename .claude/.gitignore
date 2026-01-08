@@ -1,0 +1,6 @@
+# Real Estate SaaS Claude Code Configuration
+
+## Git ignore for Claude Code configuration
+.claude/tasks/
+*.log
+.env.local
