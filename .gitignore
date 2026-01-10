@@ -1,7 +1,79 @@
-mermaid-preview.html
-test-output-*.png
-vscode-mermaid-extension.html
-.bun/
-tmp/
+# ============================================
+# Dependencies
+# ============================================
 node_modules/
+.bun/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================
+# IDE & Editor
+# ============================================
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# Build & Output
+# ============================================
+dist/
+build/
+*.log
+*.pid
+*.seed
+*.pid.lock
+coverage/
+.nyc_output/
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+.cache/
+
+# ============================================
+# Docker
+# ============================================
+.dockerignore
+
+# ============================================
+# Claude IDE Configuration
+# ============================================
+.claude/tasks/
+
+# ============================================
+# Project Specific
+# ============================================
+# Mermaid preview files (moved to docs/architecture/)
+mermaid-preview.html
+vscode-mermaid-extension.html
+test-output-*.png
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# OS Files
+# ============================================
+Thumbs.db
 .DS_Store

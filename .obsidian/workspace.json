@@ -25,12 +25,14 @@
             "id": "634d23fd21a1fa1a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "dashboard.png"
+                "file": "專案架構.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "dashboard"
+              "icon": "lucide-file",
+              "title": "專案架構"
             }
           }
         ],
@@ -198,9 +200,26 @@
   },
   "active": "634d23fd21a1fa1a",
   "lastOpenFiles": [
+    "test-output-4.png",
+    "軟硬體開發架構與互動流程圖.md",
+    "test-output-2.png",
+    "docs/Redis_必要性分析.md",
+    "docs/Expo_後端架構分析.md",
+    "docs/docker-compose_架構說明.md",
+    "docs/architecture/test-output-4.png",
+    "docs/architecture/test-output-3.png",
+    "docs/architecture/test-output-2.png",
+    "docs/architecture/test-output-1.png",
+    "docs/architecture/README.md",
+    "軟體產品需求概述.md",
+    "專案架構.md",
+    "test-output-3.png",
+    "test-output-1.png",
+    "test.md",
+    "next_step.md",
+    "dashboard.png",
     "UI_Interface_Plan.md",
     "Owner Real Estate Agent Marketing SaaS (EN).md",
-    "dashboard.png",
     "Owner Real Estate Agent Marketing SaaS.md",
     "UI/Renter UI.md",
     "UI/ Renter UI.md",
