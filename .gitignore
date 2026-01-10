@@ -1,0 +1,7 @@
+mermaid-preview.html
+test-output-*.png
+vscode-mermaid-extension.html
+.bun/
+tmp/
+node_modules/
+.DS_Store
