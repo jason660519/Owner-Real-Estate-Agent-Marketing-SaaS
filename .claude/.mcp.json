@@ -32,45 +32,38 @@
       "description": "Web content fetching for documentation research and third-party service integration"
     },
     "postgres": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "@modelcontextprotocol/server-postgres"
+        "-c",
+        "set -a && [ -f '/Users/jason66/Owner Real Estate Agent SaaS/.env' ] && . '/Users/jason66/Owner Real Estate Agent SaaS/.env' && set +a && npx @modelcontextprotocol/server-postgres \"$DATABASE_URL\""
       ],
-      "env": {
-        "POSTGRES_CONNECTION_STRING": "${POSTGRES_CONNECTION_STRING}"
-      },
       "description": "PostgreSQL database management for property data, user management, and financial records"
     },
     "github": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "@modelcontextprotocol/server-github"
+        "-c",
+        "set -a && [ -f '/Users/jason66/Owner Real Estate Agent SaaS/.env' ] && . '/Users/jason66/Owner Real Estate Agent SaaS/.env' && set +a && npx @modelcontextprotocol/server-github --owner \"$GITHUB_OWNER\" --repo \"$GITHUB_REPO\""
       ],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}",
-        "GITHUB_OWNER": "${GITHUB_OWNER}",
-        "GITHUB_REPO": "${GITHUB_REPO}"
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_TOKEN"
       },
       "description": "GitHub repository management for version control and collaboration"
     },
     "sqlite": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "@modelcontextprotocol/server-sqlite"
+        "-c",
+        "set -a && [ -f '/Users/jason66/Owner Real Estate Agent SaaS/.env' ] && . '/Users/jason66/Owner Real Estate Agent SaaS/.env' && set +a && npx @modelcontextprotocol/server-sqlite --db-path \"$SQLITE_DB_PATH\""
       ],
-      "env": {
-        "SQLITE_DB_PATH": "${SQLITE_DB_PATH}"
-      },
       "description": "SQLite database for local development and testing"
     },
     "brave-search": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "@modelcontextprotocol/server-brave-search"
+        "-c",
+        "set -a && [ -f '/Users/jason66/Owner Real Estate Agent SaaS/.env' ] && . '/Users/jason66/Owner Real Estate Agent SaaS/.env' && set +a && npx @modelcontextprotocol/server-brave-search"
       ],
-      "env": {
-        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
-      },
       "description": "Market research for competitive analysis and real estate trend data"
     }
   },
